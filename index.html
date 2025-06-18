@@ -1,125 +1,134 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio Ryan</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryan Reis | Front-End Developer</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
     <div class="particulas"></div>
 
     <nav class="navegacao">
         <ul class="menu">
-            <li>
-                <a href="#inicio" class="menu-link">inicio</a>
-            </li>
-            <li>
-                <a href="#sobres" class="menu-link">sobre</a>
-            </li>
-            <li>
-                <a href="#projetos" class="menu-link">projetos</a>
-            </li>
-            <li>
-                <a href="#contatos" class="menu-link">contato</a>
-            </li>
+            <li><a href="#inicio" class="menu-link">Home</a></li>
+            <li><a href="#about" class="menu-link">About</a></li>
+            <li><a href="#projects" class="menu-link">Projects</a></li>
+            <li><a href="#contact" class="menu-link">Contact</a></li>
         </ul>
     </nav>
 
     <main id="inicio" class="cabecalho">
         <div>
-            <img src="./img/logo.jpg" alt="foto ryan" class="foto-perfil">
+            <img src="./img/logo.jpg" alt="Ryan's photo" class="foto-perfil" />
             <h1>Ryan Reis</h1>
-            <p id="sobres" class="cabecalho-sub-titulo">Desemvolvedor Front-End</p>
+            <p class="cabecalho-sub-titulo">Front-End Developer</p>
         </div>
     </main>
 
-    <section id="sobre" class="sobre">
-        <h2 class="sobre-titulo">Sobre Mim</h2>
+    <section id="about" class="sobre">
+        <h2 class="sobre-titulo">About Me</h2>
         <div class="sobre-caixa">
-            <p class="sobre paragrafo">
-                Olá, sou um desenvolvedor front-end apaixonado por criar experiências web únicas e memoráveis. Combino
-                código limpo com design moderno para desenvolver sites que não só funcionam perfeitamente, mas também
-                impressionam visualmente.
+            <p class="sobre-paragrafo">
+                Hi, I'm Ryan Reis, a Front-End Developer focused on building clean and responsive web interfaces using
+                HTML, CSS,
+                JavaScript and React. I'm passionate about creating elegant user experiences that look great and perform
+                even
+                better.
             </p>
         </div>
     </section>
 
- 
-    
-    <section id="projetos" class="projetos">
-        
-        <div class="projetos-caixa">
-
+    <section id="projects" class="projetos">
+        <div class="projetos-container">
             <div class="projetos-card">
-                <a href="https://ryan12321101.github.io/ARAUJO/" target="_blank">
-                    <img src="./img/fundo1.png" alt="projeto 1" class="projetos-imagem">
+                <a href="https://rgewtgetbvdfas.github.io/2222/" target="_blank">
+                    <img src="./img/fundo1.jpeg" alt="Drinks project" class="projetos-imagem" />
                 </a>
                 <div class="caixa-texto">
                     <h3 class="info-projetos">Drinks</h3>
-                    <p class="paragrafo-projetos">Site simples de bebidas com animação utilizando HTML, CSS e JavaScript.</p>
+                    <p class="paragrafo-projetos">
+                        Simple animated drink site using HTML, CSS and JavaScript.<br />
+                        <a href="https://github.com/" target="_blank">🔗 GitHub</a> |
+                        <a href="https://rgewtgetbvdfas.github.io/2222/" target="_blank">🌐 Live</a>
+                    </p>
                 </div>
             </div>
 
             <div class="projetos-card">
                 <a href="https://rgewtgetbvdfas.github.io/araujo/" target="_blank">
-                    <img src="./img/fundo2.png" alt="projeto 1" class="projetos-imagem">
+                    <img src="./img/fundo2.png" alt="Estore project" class="projetos-imagem" />
                 </a>
                 <div class="caixa-texto">
                     <h3 class="info-projetos">Estore</h3>
-                    <p class="paragrafo-projetos">Mini loja com animação utilizando HTML, CSS e JavaScript.</p>
+                    <p class="paragrafo-projetos">
+                        Mini store layout with animations, built with HTML, CSS and JavaScript.<br />
+                        <a href="https://github.com/" target="_blank">🔗 GitHub</a> |
+                        <a href="https://rgewtgetbvdfas.github.io/araujo/" target="_blank">🌐 Live</a>
+                    </p>
                 </div>
             </div>
 
             <div class="projetos-card">
-                <a href="https://rgewtgetbvdfas.github.io/aa/" target="_blank">
-                    <img src="./img/fundo3.png" alt="projeto 1" class="projetos-imagem">
+                <a href="https://rgewtgetbvdfas.github.io/bolota/" target="_blank">
+                    <img src="./img/fundo3.png" alt="Bolota Burger project" class="projetos-imagem" />
                 </a>
                 <div class="caixa-texto">
-                    <h3 class="info-projetos">menu</h3>
-                    <p class="paragrafo-projetos">Menu simples com animação utilizando HTML, CSS e JavaScript.</p>
+                    <h3 class="info-projetos">Bolota Burger</h3>
+                    <p class="paragrafo-projetos">
+                        Online ordering system with cart, notes, and responsive layout.<br />
+                        <a href="https://github.com/" target="_blank">🔗 GitHub</a> |
+                        <a href="https://rgewtgetbvdfas.github.io/bolota/" target="_blank">🌐 Live</a>
+                    </p>
                 </div>
             </div>
-
-
         </div>
     </section>
 
-    <section id="contatos" class="contatos">
-        <h2 class="contatos-titulo">Entre em Contato</h2>
+    <section id="contact" class="contatos">
+        <h2 class="contatos-titulo">Contact Me</h2>
         <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
             <div class="grupo-form">
-                <input placeholder="nome" class="campo-form" id="nome">
+                <input type="text" placeholder="Your Name" class="campo-form" id="nome" />
             </div>
-
             <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite Sua Mensagem" rows="5" id="mensagem"></textarea>
+                <textarea placeholder="Your Message" rows="5" class="campo-form" id="mensagem"></textarea>
             </div>
-
-            <button type="submit" class="botaoo">Enviar Whatsapp</button>
+            <button type="submit" class="botaoo">Send via WhatsApp</button>
         </form>
     </section>
 
-    <script>
-        function enviarWhats(event) {
-            event.preventDefault()
-
-            const nome = document.getElementById('nome').value;
-            const mensagem = document.getElementById('mensagem').value;
-            const telefone = '5594984046320'
 
 
-            const texto = 'olá Me Chamo ${nome}, ${mensagem}'
-            const msgFormatada = encodeURIComponent(texto)
 
-            const url = 'https://whatsa.me/${telefone}?text=${mensagem}'
+        <script>
+            function enviarWhats(event) {
+                event.preventDefault();
 
-            window.open(url, '-blank')
-        }
+            var nome = document.getElementById('nome').value.trim();
+            var mensagem = document.getElementById('mensagem').value.trim();
+            var telefone = '5594984046320';
+
+            if (!nome || !mensagem) {
+                alert('Por favor, preencha o nome e a mensagem.');
+            return;
+    }
+
+            // Monta a mensagem com concatenação
+            var texto = "Olá, me chamo " + nome + ". " + mensagem;
+            var msgFormatada = encodeURIComponent(texto);
+
+            // Monta a URL do WhatsApp
+            var url = "https://wa.me/" + telefone + "?text=" + msgFormatada;
+
+            // Abre a URL
+            window.open(url, '_blank');
+  }
     </script>
+
+
 </body>
 
 
